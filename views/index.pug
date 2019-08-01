@@ -1,0 +1,36 @@
+doctype html
+html
+  head
+    title GiveIndia backend Challenge
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    h1 GiveIndia backend Challenge
+    p Welcome to GiveIndia backend Challenge
+    form(method='post', enctype='multipart/form-data', action='/uploadCSV')
+      select(name='currency')
+        option(value='CAD') CAD
+        option(value='HKD') HKD
+        option(value='ISK') ISK
+        option(value='PHP') PHP
+        option(value='DKK') DKK
+        option(value='CZK') CZK
+        option(value='GBP') GBP
+        option(value='RON') RON
+        option(value='SEK') SEK 
+        option(value='IDR') IDR
+        option(value='INR') INR
+        option(value='BRL') BRL
+        option(value='RUB') RUB
+        option(value='HRK') HRK
+        option(value='JPY') JPY
+        option(value='THB') THB
+        option(value='CHF') CHF
+        option(value='EUR') EUR
+        option(value='MYR') MYR
+        option(value='BGN') BGN
+        option(value='TRY') TRY
+        option(value='CNY') CNY
+        option(value='NOK') NOK
+        option(value='USD') USD
+      input(type='file', name='uploadcsv')
+      input(type='submit', name='uploadcsv', value='Upload csv file')
